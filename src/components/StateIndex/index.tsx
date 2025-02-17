@@ -1,4 +1,4 @@
-import Style from './StateIndex.module.css';
+import Style from './stateIndex.module.css';
 
 
 interface Props {
