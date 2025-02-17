@@ -1,5 +1,5 @@
 import Style from '../StateIndex/StateIndex.module.css';
-import className from 'className;'
+import classNames from 'classnames'
 
 interface Props {
     name: string;
@@ -7,11 +7,5 @@ interface Props {
 }
 
 export default function ElementList({name, isPacked}:Props) {
-    let nameElement = name;
-    if (isPacked)
-    {
-        nameElement = name + " ✅";
-    }
-
-    return <li>{nameElement}</li>
+    return <li className={classNames(Style.StateIndex, !isPacked && Style.StateIndexFalse)}>{isPacked ? name + " ✅" : name}</li>
 }

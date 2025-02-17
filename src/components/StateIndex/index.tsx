@@ -15,7 +15,7 @@ export default function StateIndex({index, setIndex}:Props) {
     }
 
     return (
-        <div className="Style.StateIndex">
+        <div className={Style.StateIndex}>
             <h4>{index}</h4>
             <button onClick={handleClick}>Click</button>
         </div>

@@ -10,7 +10,7 @@ import ElementList from './components/ElementList/index.tsx';
 type typeArrayUsers = {
   name: string;
   age: number;
-}
+} []
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <div>
-        {arrayUsers.map((elem:(name:string; age: number), index: number): Element => (
+        {arrayUsers.map((elem, index) => (
           <li key={index}>
             {elem.name} - Возраст:{elem.age}
           </li>
